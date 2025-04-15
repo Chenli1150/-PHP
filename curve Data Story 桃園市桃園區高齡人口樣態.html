@@ -8,19 +8,35 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
         }
 
-        h1 {
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            font-size: 24px;
+        .card {
+            background-color: white;
+            max-width: 900px;
+            margin: 30px auto 20px;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+
+        .card h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 18px;
+            color: #666;
         }
 
         .iframe-container {
             width: 100%;
-            height: calc(100vh - 72px); /* 預留空間給 h1 */
+            height: calc(100vh - 200px); /* 預留空間給 card */
             overflow: hidden;
         }
 
@@ -32,7 +48,11 @@
     </style>
 </head>
 <body>
-    <h1>Data Story 桃園市桃園區高齡人口樣態</h1>
+    <div class="card">
+        <h1>Data Story 桃園市桃園區高齡人口樣態</h1>
+        <h2>這是一份針對桃園市桃園區高齡人口現況與趨勢的視覺化數據分析</h2>
+    </div>
+
     <div class="iframe-container">
         <iframe src="https://plotdb.io/v/chart/37115" allowfullscreen="true"></iframe>
     </div>
